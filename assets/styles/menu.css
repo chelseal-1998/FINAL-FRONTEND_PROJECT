@@ -1,0 +1,53 @@
+.menu {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .menu {
+    display: block;
+    color: white;
+    background-color: black;
+    width: 25%;
+  }
+
+  .nav-links {
+    width: 0px;
+    overflow: hidden;
+    position: fixed;
+    top: 40px;
+    background: #e0e0e0;
+    left: 0;
+    justify-content: center;
+    height: 35px;
+    align-items: center;
+    margin-top: 10px;
+    transition: width 0.3s;
+  }
+
+  .nav-links a {
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+  }
+
+  .nav-links:hover {
+    color: maroon;
+  }
+
+  .btt-btn {
+    text-decoration: none;
+    position: fixed;
+    bottom: 3%;
+    left: 80%;
+    color: white;
+    background: #222;
+    width: 60px;
+    height: 60px;
+    padding: 10px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+  }
+}

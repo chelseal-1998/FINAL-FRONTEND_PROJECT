@@ -1,0 +1,159 @@
+body {
+  background: #e0e0e0;
+}
+.content {
+  min-height: 85vh;
+  display: flex;
+  margin: auto 50px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+}
+.content > div {
+  width: 44%;
+  margin: 3%;
+  border-radius: 6px;
+  background: #e0e0e0;
+  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+}
+
+.para {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: space-between;
+}
+
+h1 {
+  text-align: center;
+}
+
+.all {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  /* height: 60vh; */
+}
+
+.all button {
+  background-color: black;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 50%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  font-size: 16px;
+}
+
+img {
+  height: 300px;
+  object-fit: cover;
+  padding: 10px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  object-position: top;
+}
+/* 
+img:hover {
+  box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.7);
+} */
+
+.button {
+  text-align: center;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.all button a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.all button:hover,
+.all button a:hover {
+  box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.9);
+  scale: 1.1;
+  color: maroon;
+  font-size: 16px;
+}
+
+.button {
+  background-color: black;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 50%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  font-size: 16px;
+}
+
+@media screen and (max-width: 600px) {
+  .content {
+    flex-direction: column;
+  }
+
+  .para {
+    flex-direction: column;
+  }
+
+  .content > div {
+    width: 100%;
+    margin: 3% 0;
+  }
+
+  img {
+    width: 100%;
+    object-position: top;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .content {
+    flex-direction: column;
+  }
+
+  .content > div {
+    width: 100%;
+    margin: 3% 0;
+  }
+}
+
+@media screen and (max-width: 805px) {
+  .content {
+    flex-direction: column;
+  }
+
+  .para {
+    display: grid;
+  }
+
+  .about {
+    height: 100%;
+  }
+
+  .content > div {
+    width: 100%;
+    margin: 3% 0;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .content {
+    flex-direction: column;
+  }
+
+  .content > div {
+    width: 100%;
+    margin: 3% 0;
+  }
+} ;

@@ -1,0 +1,31 @@
+.about {
+  height: 70vh;
+  text-align: left;
+  margin: 70px;
+  font-size: 18px;
+}
+
+img {
+  width: 250px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.paragraph {
+  text-align: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 600px) {
+  .about {
+    height: 100%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .about {
+    height: 100%;
+  }
+}

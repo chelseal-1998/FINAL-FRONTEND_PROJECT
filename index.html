@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  </head>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    img{
+      max-width: 100%;
+    }
+  </style>
+  <link rel="stylesheet" href="./assets/styles/navigation.css" />
+  <link rel="stylesheet" href="./assets/styles/landing.css" />
+  <link rel="stylesheet" href="./assets/styles/about.css" />
+  <link rel="stylesheet" href="./assets/styles/content.css" />
+  <link rel="stylesheet" href="./assets/styles/content2.css" />
+  <link rel="stylesheet" href="./assets/styles/prices.css" />
+
+  <link rel="stylesheet" href="./assets/styles/contact.css" />
+  <link rel="stylesheet" href="./assets/styles/footer.css">
+  <link rel="stylesheet" href="./assets/styles/signup.css">
+  <link rel="stylesheet" href="./assets/styles/backtotop.css">
+  <link rel="stylesheet" href="./assets/styles/preloader.css"> 
+  <link rel="stylesheet" href="./assets/styles/image.css">
+  <link rel="stylesheet" href="./assets/styles/delete.css">
+  <link rel="stylesheet" href="./assets/styles/menu.css">
+  
+
+  <body>
+    <!-- Preloader -->
+    <div class="preloader">
+      <div class="loader"></div>
+    </div>
+    <!--navbar-->
+    <nav class="navbar">
+      <ul class="nav-links" id="nav-links">
+        <li class="nav-link"><a href="./index.html">Home</a></li>
+        <li class="nav-link"><a href="#content">Content</a></li>
+        <li class="nav-link"><a href="#gallery">Gallery</a></li>
+        <li class="nav-link"><a href="#prices">Prices</a></li>
+        <li class="nav-link"><a href="#contact">Contact</a></li>
+
+        <li id="blog"><a href="./createDance.html">Create Blog</a></li>
+      
+        </div>
+
+      </ul>
+      <button class="menu" onclick="toggleNav()">Menu</button>
+
+ 
+
+    </nav>
+    <!--landing-->
+    <header class="landing" id="top">
+      <h1>“Dance to inspire, dance to freedom, </h1>
+      <h3>life is about experiences so dance and let yourself become free.”</h3>
+    </header>
+    <!--About-->
+    <section class="about" id="about">
+      <h1>About</h1>
+     
+      <p class="paragraph">
+        Early ballroom dance and invitational events.<br> The social origin of ballroom dance lies in the European court dances of the 17th and 18th centuries,<br> although many of the dance steps were adapted from folk traditions.<br>
+
+Ballroom Dancing is a great way for people of all ages to get in shape and stay fit.<br> Dancing has many positive health benefits and is a wonderful activity that will benefit<br> your mind, body, and spirit. Dancing will improve your health and fitness, mental acuity, and social connections.<br><br>
+
+One of the important lessons in ballroom dancing is<br> learning how to build trust and learn the art of leading and following between the dance partners.<br> Unlike other types of dancing or physical activity only performed by one person, <br>ballroom dancing is strongly based on developing a solid partnership.<br>
+
+Ballroom and Latin are both a lot of fun, but they are two different styles of dancing.<br> Ballroom dance generally refers to the waltz, foxtrot, tango, quickstep, and Viennese waltz. <br>Latin dance, on the other hand, includes the cha-cha, samba, jive, paso doble, and rumba.<br>
+
+Dancesport is another name for competitive ballroom dancing. ... By contrast, ballroom dancing,<br> like all the partner dances, was invented to dance socially. <br>Get a group of ballroom dancers together, and they'll all take to the floor at the same time.<br><br>
+
+Ballroom dancing is obsolete and extinguished.<br> When we talk about ballroom dancing some people can think of some old fashioned dances, <br>considering that it's something outdated. However, the “ballroom dancing” <br>category includes many different dances that are still very popular at dance parties and nightclubs.<br>
+
+
+      </p>
+    </section>
+    <!--Content-->
+    <h1>Ballroom</h1>
+    <section class="content" id="content">
+      <div>
+        <div class="para"></div>
+        
+      </div>
+      <div>
+        <div class="para"></div>
+        
+      </div>
+   
+      <div>
+        <div class="para"></div>
+      
+      </div>
+   
+      <div>
+        <div class="para"></div>
+       
+      </div>
+    
+      <div>
+        <div class="para"></div>
+       
+      </div>
+    </section>
+    <!--Content-2-->
+
+    <h1>Latin</h1>
+    <section class="content-2" id="content-2">
+     
+      
+        <div class="para"></div>
+       
+        <div class="para"></div>
+   
+        <div class="para"></div>
+        
+        <div class="para"></div>
+   
+        <div class="para"></div>
+      
+    
+    </section>
+    <!--Prices section-->
+    <h1>Prices</h1>
+    <section class="prices" id="prices">
+      <div class="columns">
+        <ul class="price">
+          <li class="header">Pre-teens</li>
+          <li class="grey">R250/ year</li>
+          <li>2 Dances</li>
+          <li>2 Private lessons</li>
+          <li>4 lessons/month</li>
+          <li>Competitive/Social</li>
+<button class="button" onclick="document.getElementById('id01').style.display='block'">Sign Up</button>
+
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">X</span>
+  <form id="signUpForm" class="modal-content" onsubmit="event.preventDefault(); signup()">
+    <div class="container1">
+      <h1>Sign Up</h1>
+      <hr>
+      <label for="name"><b>Name</b></label>
+      <input type="text" placeholder="Enter name" name="username" required>
+
+      <label for="surname"><b>Surname</b></label>
+      <input type="text" placeholder="Enter surname" name="surname" required>
+
+      <label for="email"><b>Email</b></label>
+      <input type="email" placeholder="Enter email" name="email" required>
+
+      <label for="number"><b>Contact number</b></label>
+      <input type="text" placeholder="Enter number" name="contact" required>
+
+     
+
+      
+
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+        <button type="submit" class="button">Sign Up</button>
+      </div>
+    </div>
+  </form>
+</div>
+        </ul>
+      </div>
+
+      <div class="columns">
+        <ul class="price">
+          <li class="header">Junior</li>
+
+          <li class="grey">R275 / year</li>
+          <li>3 Dances</li>
+          <li>2 Private lessons</li>
+          <li>6 lessons/month</li>
+          <li>Competitive/Social</li>
+          <button class="button" onclick="document.getElementById('id01').style.display='block'">Sign Up</button>
+        </ul>
+      </div>
+
+      <div class="columns">
+        <ul class="price">
+          <li class="header">Youth</li>
+          <li class="grey">R300 / year</li>
+          <li>5 Dances</li>
+          <li>2 Private lessons</li>
+          <li>8 lessons/month</li>
+          <li>Competitive/Social</li>
+          <button class="button"onclick="document.getElementById('id01').style.display='block'">Sign Up</button>
+        </ul>
+      </div>
+
+      <div class="columns">
+        <ul class="price">
+          <li class="header">Adult</li>
+          <li class="grey">R350 / year</li>
+          <li>5 Dances</li>
+          <li>2 Private lessons</li>
+          <li>8 lessons/month</li>
+          <li>Competitive/Social</li>
+          <button class="button"onclick="document.getElementById('id01').style.display='block'">Sign Up</button>
+        </ul>
+      </div>
+
+      <div class="columns">
+        <ul class="price">
+          <li class="header">Senior</li>
+          <li class="grey">R250/ year</li>
+          <li>5 Dances</li>
+          <li>2 Private lessons</li>
+          <li>4 lessons/month</li>
+          <li>Competitive/Social</li>
+          <button class="button"onclick="document.getElementById('id01').style.display='block'">Sign Up</button>
+        </ul>
+      </div>
+      </section>
+    </section>
+    <!--gallery section-->
+    <h1 class="imageh1">Gallery</h1>
+    <section class="gallery" id="gallery">
+        <!-- Portfolio Gallery Grid -->
+        <div id="myBtnContainer">
+          <button class="img-btn active"  onclick="filterSelection('all')">
+            Show all
+          </button>
+          <button class="img-btn"   onclick="filterSelection('ballroom')">
+            ballroom
+          </button>
+          <button class="img-btn"  onclick="filterSelection('latin')">latin</button>
+        </div>
+    <div class="row1">
+      <div class="col latin">
+        <div class="content1">
+          <img
+            src="https://i.pinimg.com/originals/57/a4/27/57a427057ef6309883a75cb7c796fe72.jpg"
+            alt="Mountains"
+            style="width: 100%"
+          />
+          <h4>Paso Doble</h4>
+       
+        </div>
+      </div>
+      <div class="col latin">
+        <div class="content1">
+          <img
+            src="https://i.pinimg.com/originals/71/03/da/7103dae84c43acce5cc8a7df5b9c53f1.jpg"
+            alt="Mountains"
+            style="width: 100%"
+          />
+          <h4>Rumba</h4>
+       
+        </div>
+      </div>
+      <div class="col ballroom">
+        <div class="content1">
+          <img
+            src="https://starlightdance.com/wp-content/uploads/2018/03/Ballroom-Style-Dancing-Starlight-Dance-Studio-San-Diego-300x300.jpg"
+            alt="Nature"
+            style="width: 100%"
+          />
+          <h4>Waltz</h4>
+         
+        </div>
+      </div>
+
+      <div class="col ballroom">
+        <div class="content1">
+          <img
+            src="https://portlandballroomdance.com/wp-content/uploads/2015/05/ballroom-dancing-page.jpg"
+            alt="Car"
+            style="width: 100%"
+          />
+          <h4>Tango</h4>
+      
+        </div>
+      </div>
+      <div class="col ballroom">
+        <div class="content1">
+          <img
+            src="https://orangefoxstudios.co.uk/wp-content/uploads/2017/11/dancesport.jpg"
+            alt="Car"
+            style="width: 100%"
+          />
+          <h4>Viennese Waltz</h4>
+   
+        </div>
+      </div>
+      <div class="col ballroom">
+        <div class="content1">
+          <img
+            src="https://i.pinimg.com/originals/e3/c3/6a/e3c36a4767aaa6318de2035e57890960.jpg"
+            alt="Car"
+            style="width: 100%"
+          />
+          <h4>Foxtrot</h4>
+       
+        </div>
+      </div>
+
+      <div class="col latin">
+        <div class="content1">
+          <img
+            src="https://i.pinimg.com/originals/4c/93/d9/4c93d9be9af672f651553110988068df.jpg"
+            alt="People"
+            style="width: 100%"
+          />
+          <h4>Rumba</h4>
+       
+        </div>
+      </div>
+      <div class="col latin">
+        <div class="content1">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Cha-Cha-Cha_Valente_Cruz_9543.JPG/220px-Cha-Cha-Cha_Valente_Cruz_9543.JPG"
+            alt="People"
+            style="width: 100%"
+          />
+          <h4>Cha Cha</h4>
+       
+        </div>
+      </div>
+      <div class="col ballroom">
+        <div class="content1">
+          <img
+            src="http://static1.squarespace.com/static/5a63f9dd90bcce5fc025a9e0/5a643084419202749bb4d01a/5be3778a352f5384bb043011/1549060923481/IMG_8172.JPG?format=1500w"
+            alt="People"
+            style="width: 100%"
+          />
+
+          <h4>Foxtrot</h4>
+         
+        </div>
+      </div>
+
+      <div class="col latin">
+        <div class="content1">
+          <img
+            src="https://www.wikidancesport.com/Attachments/Terminology/BallroomDance/4622.jpg"
+            alt="People"
+            style="width: 100%"
+          />
+
+          <h4>Rumba</h4>
+        
+        </div>
+      </div>
+      <!-- END GRID -->
+    
+    </section>
+
+    <!--Contact form-->
+    <section class="contact" id="contact">
+      <h1>Contact</h1>
+      <div class="row">
+        <div class="column" style="background-color: white">
+          <div class="wrapper">
+            <h2>Chelsea's dance studio</h2>
+            <br />
+            <p>12596 Darby Brooke Court , <br />Woodbridge , VA 22192</p>
+            <br />
+            <p>modernballroom.nova@gmail.com</p>
+            <br />
+            <h3>Business Hours</h3>
+            <br />
+            <p>Monday,Tuesday,Wednesday,Thursday,Friday<br />1:00pm - 9.00pm</p>
+            <br />
+            <p>Weekend availablitity By Appointment Only</p>
+          </div>
+        </div>
+        <div class="column" style="background-color: white">
+          <div class="wrapper">
+            <div class="fcf-body">
+
+              <div id="fcf-form">
+              <h3 class="fcf-h3">Contact us</h3>
+          
+              <form id="fcf-form-id" class="fcf-form-class" method="post" action=https://formspree.io/f/mdoprjdk method="POST">
+                  
+                <div class="container2">
+                  <form action="https://formspree.io/f/mdoprjdk" method="POST">                
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+                    <label for="lname">Email Address</label>
+                    <input type="text" id="email" name="email" placeholder="Your Email address..">
+                
+                  
+                    <label for="subject">What dances are you interested in?</label>
+                    <input type="subject" name="what dances are you interested in?" placeholder="Let us know.." style="height:50px" style="width: 50px;">
+                
+                    <input type="submit" value="Submit">
+                
+                  </form>
+                </div>
+                
+                </section>
+                <a href="#top" class="btt-btn">TOP</a>
+                
+      
+  
+    <script src="./assets/scripts/gallery.js"></script>
+    <script src="./assets/scripts/signup.js"></script>
+    <script src="./assets/scripts/image.js"></script>
+    <script src="./assets/scripts/menu.js"></script>
+  </body>
+</html>

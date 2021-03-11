@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  max-width: 100vh;
+  margin: auto;
+}
+
+.row1,
+.row1 > .column {
+  padding: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.col {
+  width: 18.33%;
+  display: none;
+}
+
+.content1 {
+  background-color: white;
+}
+
+.show {
+  display: block;
+}
+
+.img-btn {
+  border: none;
+  outline: none;
+  padding: 13px 17px;
+  background-color: black;
+  cursor: pointer;
+  color: white;
+  font-size: 17px;
+}
+
+.img-btn:hover:hover {
+  box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.9);
+  scale: 1.1;
+  color: maroon;
+}
+
+.img-btn.active {
+  color: white;
+  font-size: 17px;
+}
+
+#myBtnContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 15px;
+}
+
+@media screen and (max-width: 600px) {
+  .row1,
+  .row1 > .column {
+    flex-direction: column;
+  }
+
+  .col {
+    width: 65.33%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .row1,
+  .row1 > .column {
+    flex-direction: column;
+  }
+
+  .col {
+    width: 65.33%;
+  }
+}

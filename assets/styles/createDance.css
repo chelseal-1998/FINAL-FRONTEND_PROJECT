@@ -1,0 +1,35 @@
+h1 {
+  text-align: center;
+  color: maroon;
+}
+
+#create-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: url("https://dm0qx8t0i9gc9.cloudfront.net/thumbnails/video/NL0L5N5Rgimkt8edi/videoblocks-blurred-man-and-woman-dancing-latin-american-dance-in-costumes-in-the-studio-ballroom-shoes-in-the-foreground-slow-motion_hmufbwkig_thumbnail-1080_01.png");
+  background-size: cover;
+}
+
+h2 {
+  color: white;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+a:hover {
+  color: white;
+  background-color: maroon;
+}
+
+button:hover {
+  background-color: maroon;
+  color: white;
+}

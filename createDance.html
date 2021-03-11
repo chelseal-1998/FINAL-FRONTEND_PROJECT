@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <link rel="stylesheet" href="./assets/styles/createDance.css" />
+  <body>
+    <h1>Create your Dance blog</h1>
+    <a href="index.html">Back to Blog</a>
+    <form
+      id="create-form"
+      onsubmit="event.preventDefault(); createDancePost() "
+      action="https://infinite-sierra-94687.herokuapp.com/add-data/"
+      method="POST"
+    >
+      <h2>Dance Information</h2>
+
+      <input type="text" name="header" placeholder="header" /><br />
+
+      <input type="text" name="title" placeholder="title" /><br />
+
+      <textarea name="description" placeholder="description"></textarea><br />
+
+      <textarea name="body1" placeholder="body1"></textarea><br />
+
+      <textarea name="body2" placeholder="body2"></textarea><br />
+
+      <textarea name="body3" placeholder="body3"></textarea><br />
+
+      <textarea name="body4" placeholder="body4"></textarea><br />
+
+      <textarea name="body5" placeholder="body5"></textarea><br />
+
+      <textarea name="image" placeholder="image"></textarea><br />
+
+      <textarea name="category" placeholder="category"></textarea><br />
+
+      <textarea name="video" placeholder="video"></textarea><br />
+      <button type="submit">Create Post</button>
+    </form>
+    <div id="show-data"></div>
+    <a href="delete.html">Delete dance blog</a>
+
+    <script src="./assets/scripts/createDance.js"></script>
+  </body>
+</html>
